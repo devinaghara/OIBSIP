@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.home {
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+
+}
+
+.nav-bar {
+    background-color: rgb(202, 35, 35);
+    /* height: 120px; */
+    /* width: 100%; */
+}
+
+.logo {
+    height: 110px;
+    width: 165px;
+    margin-left: 40px;
+}
+
+nav {
+    /* width: 100%; */
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    /* background: #ff004f; */
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    color: white;
+    padding: 15%;
+}
+
+.header-text p {
+    font-size: 2rem;
+}
+
+.header-text h1 {
+    font-size: 3rem;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    padding: 50px 75px;
+    display: flex;
+}
+
+.pic {
+    background-image: url('images/Pop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 540px;
+    width: 525px;
+    border-radius: 50%;
+}
+
+span {
+    color: rgb(202, 35, 35);
+}
+
+/* ........ About me ........ */
+
+#about {
+    padding: 75px 70px;
+    /* color: #ababab; */
+    color: grey;
+}
+
+/* .box{
+    padding: 10px 10%;
+} */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.info {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.ul-info {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    font-size: 18px;
+    color: white;
+}
+
+.info-items {
+    font-weight: 600;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.tab-contents ul li span {
+    color: rgb(202, 35, 35);
+    font-size: 14px;
+}
+
+.skill-head {
+    font-size: 25px;
+}
+
+
+/* ---------------My Services--------------- */
+
+#services {
+    margin-left: 70px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+    color: white;
+}
+
+.service-head {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.service-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    width: 350px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.service-list div p {
+    text-align: justify;
+    font-size: 14px;
+}
+
+.service-subhead {
+    font-size: 30px;
+}
+
+.service-list div a {
+    font-size: 14px;
+    color: white;
+}
+
+.service-list div:hover {
+    background: rgb(202, 35, 35);
+    transform: translateY(-10px);
+}
+
+
+
+/* -----------------My work---------------- */
+
+.portfolio-head {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.portfolio-box {
+    /* margin-left: 70px; */
+    padding: 70px 75px;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+    color: white;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(202, 35, 35));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: rgb(202, 35, 35);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 40px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    color: white;
+    display: block;
+    font-size: 17px;
+    width: fit-content;
+    margin: 50px auto;
+    border: 1px solid rgb(202, 35, 35);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: rgb(202, 35, 35);
+}
+
+
+
+/* -------------Contact ME---------------- */
+
+.contact-box {
+    padding: 70px 75px;
+    color: white;
+}
+
+.contact-head {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: rgb(202, 35, 35);
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: grey;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: rgb(202, 35, 35);
+    transform: translateY(-5px);
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: rgb(202, 35, 35);
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    /* background: grey; */
+    padding: 15px;
+    margin: 15px 0;
+    color: rgb(202, 35, 35);
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2 {
+    padding: 16px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright {
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: grey;
+    padding: 25px 0;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+#msg{
+    margin-top: -20px;
+    color: white;
+    text-align: center;
+}
+
+
